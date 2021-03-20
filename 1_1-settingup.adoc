@@ -20,7 +20,7 @@ You should now see a new workspace page, lets configure it for our lab.
 === Step 1: Name your workspace. 
 In my case I just add my initials before it. You can choose anything or leave it as is. 
 
-image::workshop-che-screenshot4.png[Creating workspace,600]
+image::images/workshop-che-screenshot4.png[Creating workspace,600]
 
 
 === Step 2: Choose your Stack
