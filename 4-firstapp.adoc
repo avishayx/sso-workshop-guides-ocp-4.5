@@ -8,7 +8,7 @@ need a container platform. That's what Kubernetes is. Kubernetes defines a set o
 collectively provide mechanisms for deploying, maintaining, and scaling applications packaged inside containers. OpenShift
  _extends_ Kubernetes with build automation and a routing system, while inheriting all the primitives from Kubernetes.
 
-image::openshift-architecture.png[OpenShift Architecture, 800]
+image::images/openshift-architecture.png[OpenShift Architecture, 800]
 
 === Primitives
 
@@ -67,7 +67,7 @@ Image) as a tool to provide reproducible images. In this lab, we are going to us
 going to build the application on our machine and push the resulting artifact (a _fat jar_) as input to an S2I build.
 This build creates an image for starting the application.
 
-image::openshift-build-process.png[OpenShift Build Process, 800]
+image::images/openshift-build-process.png[OpenShift Build Process, 800]
 
 ==== Services
 
@@ -79,7 +79,7 @@ consistently available enabling anything that depends on the service to refer to
 Services are assigned an IP address and port pair that, when accessed, proxy to an appropriate backing pod. A service
 uses a label selector to find all the containers running that provide a certain network service on a certain port.
 
-image::openshift-service.png[OpenShift Services, 400]
+image::images/openshift-service.png[OpenShift Services, 400]
 
 ==== Routes
 
@@ -87,7 +87,7 @@ _Routes_ are the last concept to understand before starting to use OpenShift. Se
 Routes exposes a service outside of OpenShift. A route allows you to associate a service with an externally-reachable
  host name.
 
-image::openshift-entities.png[OpenShift Entities, 800]
+image::images/openshift-entities.png[OpenShift Entities, 800]
 
 
 Now, you are ready to deploy your first application.
@@ -200,7 +200,7 @@ oc get route js-console
 
 Fill in the details on the form (e.g. in below screenshot) and press save. Ensure you use protocol 'http://' with your route e.g. 'http://js-console-evals01-sso-kubernetes-workshop.apps.cph-5a34.open.redhat.com'(An example shown in the following screenshot)
 
-image::sso_adminclientconfig.png[Realm Client settings]
+image::images/sso_adminclientconfig.png[Realm Client settings]
 
 Now go back to your browser and relaod the JS Console app. You should be redirected to the Login page
 
@@ -209,7 +209,7 @@ image::sso_adminloginconfig.png[Realm Login settings]
 Register a new user with a valid email address.
 After registration you should be able to login and should see the following Console with your registered users Name
 
-image::sso_demojsconsole.png[JS Console]
+image::images/sso_demojsconsole.png[JS Console]
 
 
 Congratulations!
