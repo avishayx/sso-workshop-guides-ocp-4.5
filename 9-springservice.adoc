@@ -172,7 +172,7 @@ $ mvn clean fabric8:deploy -Popenshift -DskipTests \
 This process generates the uberjar file as well as the OpenShift resources and deploys them to the current project
 Following is the openshift webconsole from a deployed project
 
-image::sso_springfinalocpshot.png[Secured App Deployment]
+image::images/sso_springfinalocpshot.png[Secured App Deployment]
 
 Lets move on to test our application both on the terminal and the browser.
 
@@ -253,11 +253,11 @@ Lets see how security is enforced, how you authenticate, and how you work with t
 
 Click the Invoke button. 
 
-image::sso_springmain.png[Unauthenticated Secured Example Web Interface]
+image::images/sso_springmain.png[Unauthenticated Secured Example Web Interface]
 
 The services responds with an HTTP 401 Unauthorized status code.
 
-image::sso_springunauthenticated.png[Unauthenticated Error Message]
+image::images/sso_springunauthenticated.png[Unauthenticated Error Message]
         
 ==== Perform an authenticated request as a user:
 
@@ -266,13 +266,13 @@ Click the Login button to authenticate against Red Hat SSO. You will be redirect
 Log in as the Alice user. You will be redirected back to the web interface.
 You can see the access (bearer) token in the command line output at the bottom of the page.
 
-image::sso_springalice.png[Authenticated Secured Example Web Interface (as Alice)]
+image::images/sso_springalice.png[Authenticated Secured Example Web Interface (as Alice)]
 
 Click Invoke again to access the Greeting service.
 
 Confirm that there is no exception and the JSON response payload is displayed. This means the service accepted your access (bearer) token and you are authorized access to the Greeting service.
 
-image::sso_springinvokealice.png[The Result of an Authenticated Greeting Request (as Alice)]
+image::images/sso_springinvokealice.png[The Result of an Authenticated Greeting Request (as Alice)]
 
 ==== Perform an authenticated request as an admininstrator:
 
@@ -284,12 +284,12 @@ image::sso_springinvokealice.png[The Result of an Authenticated Greeting Request
 
 - Click the Login button and log in as the admin user.
 
-image::sso_springadmin.png[Authenticated Secured Example Web Interface (as admin)]
+image::images/sso_springadmin.png[Authenticated Secured Example Web Interface (as admin)]
 
 Click the Invoke button.
 
 The service responds with an HTTP 403 Forbidden status code because the admin user is not authorized to access the Greeting service.
-image::sso_springunauthorized.png[Unauthorized Error Message]
+image::images/sso_springunauthorized.png[Unauthorized Error Message]
 
 === Running Integration tests with SSO
 Now that we have deployed an example greeting service and secured it. In most cases we would like to test and ensure integrations between services and components are working.
