@@ -54,13 +54,13 @@ While you're looking at the ID Token take a note of the kid, try to remember the
 
 <3> Click on Providers. 
 
-image::sso_adminkeyselect.png[Events]
+image::images/sso_adminkeyselect.png[Events]
 
 <4> From the drop-down select ecdsa-generated. 
 
 <5> Set the priority to 200 and click Save. As the priority is higher than the current active keys the new keys will be used next time tokens are signed.
 
-image::sso_adminkeysescda.png[escda]
+image::images/sso_adminkeysescda.png[escda]
 
 
 - Now go back to the JS Console and clik on Refresh. Copy the token to the JWT validation extension. Notice that the kid has now changed.
@@ -87,7 +87,7 @@ Events are the system wide events, you can see each event regarding the events, 
 
 <3> Turn on Save Events and click Save.
 
-image::sso_adminevents.png[Events]
+image::images/sso_adminevents.png[Events]
 
 
 <4> Go back to the JS Console and click Refresh. 
@@ -98,7 +98,7 @@ image::sso_adminevents.png[Events]
 
 Go back to the Events in the Red Hat SSO Admin Console and notice how there are now a list of events.
 
-image::sso_adminloginevents.png[Events]
+image::images/sso_adminloginevents.png[Events]
 
 Not only can Red Hat SSO save these events to be able to display them in the admin console and account management console, but you can develop your own event listener that can do what you want with the events.
 
@@ -176,11 +176,11 @@ Ensure that you can change the namespace to your new project. which should be `<
 
 <2> Goto the openshift console and press the add to project button and then Import YAML/JSON
 
-image::openshift-addtoproject.png[Events]
+image::images/openshift-addtoproject.png[Events]
 
 <3> Paste the content and press next.
 
-image::openshift-templatecopy.png[Events]
+image::images/openshift-templatecopy.png[Events]
 
 <4> remmember to key in the admin username and password and press create.
 
@@ -263,7 +263,7 @@ Make sure that you have configured email as described in the earlier section on 
 
 <3> Also fill in the details on the form (e.g. in below screenshot) and press save. Ensure you use protocol with your route e.g. 'http://js-console-evals01-custom-sso-kubernetes-workshop.apps.cph-5a34.open.redhat.com'(An example shown in the following screenshot)
 
-image::sso_adminclientconfig.png[Realm Client settings]
+image::images/sso_adminclientconfig.png[Realm Client settings]
 
 Now go back to your browser and relaod the JS Console app. You should be redirected to the Login page
 
@@ -280,7 +280,7 @@ The source code for the magic-link is placed in the `magic-link/src`, do take a 
 
 <4> Click on Actions and Delete for Username Password Form and OTP Form.
 
-image::sso_adminauthethicationdelete.png[Delete Actions]
+image::images/sso_adminauthethicationdelete.png[Delete Actions]
 
 
 <5> Then click on Add execution. 
@@ -295,7 +295,7 @@ image::sso_adminauthethicationdelete.png[Delete Actions]
 
 You should see the following screen, once you reload JS Console.
 
-image::sso_adminmagiclink.png[Magic Link]
+image::images/sso_adminmagiclink.png[Magic Link]
 
 
 Congratulations! you have successfully done the following
