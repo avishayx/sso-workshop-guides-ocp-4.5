@@ -12,7 +12,7 @@ Following instructions will guide you in creating a workspace for this lab.
 
 Create a workspace by pressing the "Add Workspace" button. 
 
-image::workshop-che-screenshot3.png[Creating workspace,600]
+image::images/workshop-che-screenshot3.png[Creating workspace,600]
 
 
 You should now see a new workspace page, lets configure it for our lab. 
@@ -29,13 +29,13 @@ A stack is a runtime configuration for a workspace. It contains a runtime recipe
 
 Choosing our stack for the lab; select the `Spring boot` Stack as shown in the image below. * You do not need to press the "Add Stack" button; rather just select the stack by clicking on its name
 
-image::workshop-che-screenshot5.png[Creating workspace,600]
+image::images/workshop-che-screenshot5.png[Creating workspace,600]
 
 
 === Step 3: Import the lab project from github
 As showin in the image below, select `GIT` and press the add button to add the repo for this lab
 
-image::workshop-che-screenshot6.png[Creating workspace,600]
+image::images/workshop-che-screenshot6.png[Creating workspace,600]
 
 [source]
 ----
@@ -45,7 +45,8 @@ https://github.com/jbossdemocentral/sso-kubernetes-workshop.git
 Press the Create Workspace button, and wait for the following dialog to appear. 
 Now open the workspace and let it load. It can take some time. Time for any questions?
 
-image::workshop-che-screenshot7.png[Creating workspace,600]
+
+image::images/workshop-che-screenshot7.png[Creating workspace,600]
 
 
 == Working with Che/CodeReady
