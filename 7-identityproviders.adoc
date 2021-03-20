@@ -5,7 +5,7 @@ When using Red Hat Single Sign-On as an identity broker, users are not forced to
 
 You can also configure a default broker. In this case the user will not be given a choice, but instead be redirected directly to the parent broker. The following diagram demonstrates the steps involved when using Red Hat Single Sign-On to broker an external identity provider: 
 
-image::identity_broker_flow.png[Identity brokering]
+image::images/identity_broker_flow.png[Identity brokering]
 
 <1> User is not authenticated and requests a protected resource in a client application.
 
