@@ -79,7 +79,7 @@ But first we want to know the different parameters our template will use. Today 
 
 <3> Press `View all results`
 
-image::openshift-sso_search.png[Search for SSO]
+image::images/openshift-sso_search.png[Search for SSO]
 
 <4> Select the following template `Red Hat Single Sign-On 7.3 + PostgreSQL (Persistent)` by clicking on it.
 
@@ -88,17 +88,17 @@ All the fields in this section denote the parameters that can be added to this t
 For now we will only change the SSO Administrator username and password. 
 I have chosen 'admin/pass' feel free to choose any, but make sure you remember them or note them, since we will be using them again. 
 
-image::sso_install.png[SSO install Config]
+image::images/sso_install.png[SSO install Config]
 
 Press Next and complete the installation with the default selections. 
 
 Once compeleted, Openshift will start the installation procedure and you can view the progress in the openshift console. Wait for the deployment to compelete. Once the deployment is finished. you should see the following on your openshift console. 
 
-image::sso_installed.png[SSO installed]
+image::images/sso_installed.png[SSO installed]
 
 Now that SSO is installed lets login to our newly created SSO. Click on the link as denoted in the picture and it should take you to the Red Hat SSO main page. 
 
-image::sso_adminlogin.png[Login screen]
+image::images/sso_adminlogin.png[Login screen]
 
 
 === Let's move on
