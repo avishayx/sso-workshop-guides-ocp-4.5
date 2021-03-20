@@ -42,7 +42,7 @@ Lets create a new keycloak application
 
 And then press create
 
-image::keycloak_create.png[Keycloak Template]
+image::images/keycloak_create.png[Keycloak Template]
 
 Wait for the installation to be finished. 
 
