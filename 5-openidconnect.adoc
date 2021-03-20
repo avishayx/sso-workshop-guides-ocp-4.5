@@ -80,7 +80,7 @@ Now we've created a client scope, but we also need to asign it to the client, so
 
 And also on the front page of the JS Console
 
-image::sso_jsconsoleuseravatar.png[User Consent]
+image::images/sso_jsconsoleuseravatar.png[User Consent]
 
 === Requiring Consent
 So far we've assumed the JS Console is an internal trusted application, but what if it's a third party external application? In that case we probably want the user to grant access to what the application wants to have access to.
@@ -96,7 +96,7 @@ So far we've assumed the JS Console is an internal trusted application, but what
 Now you have successfully configured a consent. And you can see that it also shows the different attributes that you are consenting too. 
 You can grant consent and should then be able to see the grants. Lets move on to learn more about that.
 
-image::sso_adminuserconsent.png[User Consent]
+image::images/sso_adminuserconsent.png[User Consent]
 
 
 Lets say if the user didnt want to consent any longer. They could goto to the accounts page and remove the consent. 
@@ -106,7 +106,7 @@ e.g. https://sso-evals01-sso-kubernetes-workshop.apps.cph-5a34.open.redhat.com/a
 
 You can press the `Revoke Grant` and premissions will be removed.
 
-image::sso_useraccountrevoke.png[Revoking grants]
+image::images/sso_useraccountrevoke.png[Revoking grants]
 
 All the granted permissions and list of applictions will be listed. As you can see Account does not have a Consent, and hence does not offer the revoke options. This is very useful when multiple solutions an applications are connected to single sign on like Red Hat SSO.
 
