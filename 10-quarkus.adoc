@@ -83,7 +83,7 @@ quarkus.log.category."io.smallrye.jwt".level=TRACE
 
 - Open the application.properties file `src/main/resources`, and change the value of the property `quarkus.oidc.auth-server-url` to the newly deployed keycloak server url, here is an example from user: evals01, use the http protocol for the `quarkus.oidc.auth-server-url`.
 
-image::keycloak_httpurl.png[Keycloak url]
+image::images/keycloak_httpurl.png[Keycloak url]
 
 
 - this is the Client name in our keycloak server, quite similar to our JS Console app in our previous excercise which was called `js-console`
@@ -230,11 +230,11 @@ oc get route kstart
 
 Once the application is deployed, the console should look similar as follows
 
-image::keycloak_quarkusapp.png[Keycloak Template]
+image::images/keycloak_quarkusapp.png[Keycloak Template]
 
 Now Go back to the SSO Admin console, and configure the `backend-service` client with the correct url from your `kstart application`. Following is the Client config example and how it looks in the keycloak console.
 
-image::keycloak_clientconfig.png[Keycloak Template]
+image::images/keycloak_clientconfig.png[Keycloak Template]
 
 <1> Check the Access Type field is not public; rather `confidential` , Also if you look at the `Credentials` Tab you will see the the credentials used.
 
@@ -260,7 +260,7 @@ If all is going well you should now see your application in Openshift console.
 <4> Click on user and you will see message appearing showing the User details and the call response from backend service. 
 
 
-image::keycloak_jsconsole.png[Keycloak Template]
+image::images/keycloak_jsconsole.png[Keycloak Template]
 
 
 Congratulations you have now created a front end application that connects to a backend. 
