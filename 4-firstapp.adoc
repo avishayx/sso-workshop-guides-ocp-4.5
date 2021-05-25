@@ -204,7 +204,7 @@ image::images/sso_adminclientconfig.png[Realm Client settings]
 
 Now go back to your browser and relaod the JS Console app. You should be redirected to the Login page
 
-image::sso_adminloginconfig.png[Realm Login settings]
+image::images/sso_adminloginconfig.png[Realm Login settings]
 
 Register a new user with a valid email address.
 After registration you should be able to login and should see the following Console with your registered users Name
